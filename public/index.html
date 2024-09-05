@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Supplies Tracker</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Office Supplies Tracker</h1>
+        <p class="lead text-center">Use the buttons below to view and request supplies.</p>
+
+        <!-- Button to List Supplies -->
+        <button class="btn btn-primary mb-3" onclick="listSupplies()">List Supplies</button>
+
+        <!-- Placeholder for Supplies List -->
+        <div id="supplies-list" class="mb-4"></div>
+
+        <!-- Form to Request an Item -->
+        <div class="input-group mb-3">
+            <input type="number" id="item-id" class="form-control" placeholder="Enter Item ID to Request">
+            <button class="btn btn-success" onclick="requestItem()">Request Item</button>
+        </div>
+
+        <!-- Placeholder for Request Response -->
+        <div id="request-response"></div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
